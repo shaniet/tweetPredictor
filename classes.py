@@ -20,9 +20,8 @@ class Node:
 	def rand_node(self):
 		return random.choice(self.next_nodes) if len(self.next_nodes) > 0 else None
 
-	def print_data(self):
-		print("PRINTING DATA FOR VAL: ", self.val)
-		print([str(n.val) for n in self.next_nodes])
+	def look_up(self):
+		[str(self.val) for n in self.next_nodes]
 
 
 
